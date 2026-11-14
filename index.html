@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Clicker Game</h1>
+        <p>Натискай на фігуру, щоб набирати очки!</p>
+
+        <section class="settings">
+            <label>
+                Складність:
+                <select id="difficulty">
+                    <option value="easy">Легка</option>
+                    <option value="medium">Середня</option>
+                    <option value="hard">Складна</option>
+                </select>
+            </label>
+
+            <label>
+                Колір:
+                <select id="color">
+                    <option value="red">Червоний</option>
+                    <option value="green">Зелений</option>
+                    <option value="blue">Синій</option>
+                </select>
+            </label>
+
+            <button id="startBtn">Почати гру</button>
+        </section>
+
+        <section class="statistics">
+            <div>Очки: <strong id="score">0</strong></div>
+            <div>Рекорд: <strong id="bestScore">0</strong></div>
+            <div>Натискання: <strong id="clicks">0</strong></div>
+        </section>
+
+        <div class="timer">
+            Час: <strong id="timer">5</strong> сек.
+        </div>
+
+        <div id="status">Натисни «Почати гру»</div>
+
+        <div id="gameArea">
+            <div id="spawnZone"></div>
+            <button id="target"></button>
+        </div>
+
+        <button id="resetBtn">Скинути рахунок</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
